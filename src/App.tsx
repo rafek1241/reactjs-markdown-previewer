@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./App.scss";
 
 class App extends Component {
@@ -23,9 +22,15 @@ class App extends Component {
         <div className="container-fluid">
           <div className="row">
             <div className="col">
+              <div className="row section-header-bar">
+                Input text here:
+              </div>
               <div className="row">Lorem ipsum dolor sit.</div>
             </div>
             <div className="col">
+              <div className="row section-header-bar">
+                Preview
+              </div>
               <div className="row">Lorem ipsum dolor sit.</div>
             </div>
           </div>
