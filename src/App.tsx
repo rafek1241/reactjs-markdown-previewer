@@ -1,5 +1,8 @@
 import React, { Component, Props } from "react";
+import ReactHtmlParser from "../node_modules/react-html-parser/";
 import "./App.scss";
+
+const marked = require("../node_modules/marked/lib/marked.js");
 
 class App extends Component<{}, { document: string }> {
   constructor(props: any) {
@@ -13,7 +16,7 @@ class App extends Component<{}, { document: string }> {
     this.updateDocumentValue = this.updateDocumentValue.bind(this);
   }
 
-  updateDocumentValue(event : any) {
+  updateDocumentValue(event: any) {
     this.setState({
       document: event.target.value
     });
@@ -54,8 +57,7 @@ class App extends Component<{}, { document: string }> {
               <div className="row section-header-bar">Preview</div>
               <div className="row pl-1 section">
                 <div id="preview">
-                  There will be view of the parsed document that you passed to
-                  the left side of the screen.
+                  {ReactHtmlParser(marked(this.state.document))}
                 </div>
               </div>
             </div>
