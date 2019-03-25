@@ -7,3 +7,23 @@
   background-color: $primary;
   color: $white;
 }
+
+.app {
+  height: 100%;
+
+  .editor-and-preview-container {
+    height: calc(100% - 56px);
+    & > div {
+      height: 100%;
+    }
+    .section {
+      height: calc(100% - 40px);
+
+      textarea {
+        resize: none;
+        border-radius: 0;
+        border-top: 0;
+      }
+    }
+  }
+}

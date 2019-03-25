@@ -4,7 +4,7 @@ import "./App.scss";
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="app">
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <ul className="navbar-nav mr-auto">
             <li className="nav-item">
@@ -19,19 +19,25 @@ class App extends Component {
             </li>
           </ul>
         </nav>
-        <div className="container-fluid">
+        <div className="container-fluid editor-and-preview-container">
           <div className="row">
             <div className="col">
-              <div className="row section-header-bar">
-                Input text here:
+              <div className="row section-header-bar">Editor</div>
+              <div className="row pr-1 section">
+                <textarea
+                  className="form-control"
+                  id="editor"
+                  placeholder="Type here your document code"
+                />
               </div>
-              <div className="row">Lorem ipsum dolor sit.</div>
             </div>
             <div className="col">
-              <div className="row section-header-bar">
-                Preview
+              <div className="row section-header-bar">Preview</div>
+              <div className="row pl-1 section">
+                <div id="preview">
+                  There will be view of the parsed document that you passed to the left side of the screen.
+                </div>
               </div>
-              <div className="row">Lorem ipsum dolor sit.</div>
             </div>
           </div>
         </div>
