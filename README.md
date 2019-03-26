@@ -1,5 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e6a66305-c9ef-437f-93a2-488a478ac43c/deploy-status)](https://app.netlify.com/sites/gracious-tereshkova-779ca7/deploys) 
+
+[Link to the application preview](https://gracious-tereshkova-779ca7.netlify.com)
+
+
 ## More information about project
 
 https://learn.freecodecamp.org/front-end-libraries/front-end-libraries-projects/build-a-markdown-previewer
