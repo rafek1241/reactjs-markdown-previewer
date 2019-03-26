@@ -1,7 +1,6 @@
 import React, { Component, Props } from "react";
 import "./App.scss";
-import ReactHtmlParser from 'react-html-parser';
-
+import ReactHtmlParser from "react-html-parser";
 
 const marked = require("../node_modules/marked/lib/marked.js");
 
@@ -46,6 +45,7 @@ class App extends Component<{}, { document: string }> {
               <div className="row section-header-bar">Editor</div>
               <div className="row pr-1 section">
                 <textarea
+                  autoComplete="off"
                   className="form-control"
                   id="editor"
                   placeholder="Type here your document code"
