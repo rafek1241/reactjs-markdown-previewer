@@ -1,6 +1,7 @@
 import React, { Component, Props } from "react";
-import ReactHtmlParser from "../node_modules/react-html-parser/";
 import "./App.scss";
+import ReactHtmlParser from 'react-html-parser';
+
 
 const marked = require("../node_modules/marked/lib/marked.js");
 
